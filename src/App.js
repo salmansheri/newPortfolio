@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Intro from './components/intro/Intro';
+import About from './components/about/About';
+import ProjectList from './components/projectsList/ProjectLists';
+import Contact from './components/contact/Contact';
+import Toggle from './components/toggle/Toggle';
 
 function App() {
+  // const [dark, setDark] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toggle />
+      <Intro />
+      <About />
+      <ProjectList />
+      <Contact />
+      
     </div>
   );
 }
